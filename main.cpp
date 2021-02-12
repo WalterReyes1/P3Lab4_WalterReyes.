@@ -15,7 +15,10 @@ int main(int argc, char** argv) {
 		int opcion2= 0;
 		if(opcion ==1){
 			vector<productos*> producto;
-			
+			cout<<"1.Agregar producto"<<endl;
+			cout<<"2.Editar producto"<<endl;
+			cout<<"3. Eliminar producto"<<endl;
+			cin>>opcion2;
 			if(opcion2 == 1){
 				cout<<"\n 1. Agregar Producto"<<endl;
 				int id,cant;
@@ -38,7 +41,7 @@ int main(int argc, char** argv) {
 			}
 			if(opcion2== 3){
 				cout<<"\n 3. Eliminr Producto"<<endl;
-				for(int i = 0; i <producto.size();i++){
+				for(int i = 0; i <=producto.size();i++){
 					productos *p = producto[i];
 					cout<<"Producto #"<<i<<"-----"<<endl;
 					cout << p->toString() << endl;
