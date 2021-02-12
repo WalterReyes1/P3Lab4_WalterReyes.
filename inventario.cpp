@@ -1,4 +1,4 @@
-#include "inventario.hpp"
+/*#include "inventario.hpp"
 #include <string>
 #include <iostream>
 #include <vector>

@@ -27,7 +27,7 @@ class productos{
 	void setCateg(string);
 	void setCant(int);
 	void setPrecio(float);
-	string to_String();
+	string toString();
 	
 	
 };

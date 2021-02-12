@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
-
+using namespace std;
 productos::productos(){
 	
 }
@@ -47,12 +47,12 @@ float productos::getPrecio(){
 void productos::setPrecio(float _precio){
 	this->precio = _precio;
 }
-string productos::to_String(){
+string productos::toString(){
 	string c = "";
-	c+= "Id del producto: "+to_String(getId())+"\n";
-	c+= "Nombre del producto: "+this->getNom()+"\n";
-	c+= "Categoria: "+this->getCateg()+"\n";
-	c+= "Cantidad: "+to_string(this->getCant())+"\n";
-	c+= "Precio: "+to_string(this->getPrecio())+"\n";	
+//	c+= "Id del producto: " +to_string(getId()) + "\n";
+	c+= "Nombre del producto: " +this->getNom() + "\n";
+	c+= "Categoria: " + this->getCateg() + "\n";
+//	c+= "Cantidad: " + to_string(this->getCant()) + "\n";
+//	c+= "Precio: " + to_string(this->getPrecio()) + "\n";	
 	return c;
 }

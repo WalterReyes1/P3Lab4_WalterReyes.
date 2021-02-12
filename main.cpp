@@ -14,6 +14,7 @@ int main(int argc, char** argv) {
 		cin>> opcion; 
 		int opcion2= 0;
 		if(opcion ==1){
+			vector<productos*> producto;
 			
 			if(opcion2 == 1){
 				cout<<"\n 1. Agregar Producto"<<endl;
@@ -30,7 +31,7 @@ int main(int argc, char** argv) {
 				cin>>categoria;
 				cout<<"Ingrese precio: "<<endl;
 				cin >> precio;
-				//productos.push_back(new productos(id,nombre,cant,categoria,precio));
+				producto.push_back(new productos(id,nombre,cant,categoria,precio));
 			}
 			if(opcion2== 2){
 				cout<<"\n 2. Modificar Producto"<<endl;
