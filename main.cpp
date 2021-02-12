@@ -38,6 +38,16 @@ int main(int argc, char** argv) {
 			}
 			if(opcion2== 3){
 				cout<<"\n 3. Eliminr Producto"<<endl;
+				for(int i = 0; i <producto.size();i++){
+					productos *p = producto[i];
+					cout<<"Producto #"<<i<<"-----"<<endl;
+					cout << p->toString() << endl;
+				}
+				 int prod = -1;
+	    	      cout << "Ingrese el indice del producto que eliminara: ";
+		         cin >> prod;
+			     delete producto[prod];
+			    
 			}
 			
 		}// fin de mantenimiento
